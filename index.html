@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .Parent{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .Child form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        button{
+            height: 2rem;
+            width: 10rem;
+            border: none;
+            background-color: rgb(48, 47, 47);
+            border-radius: 5px;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        textarea{
+            width: 20rem;
+            padding: 10px;
+        }
+
+        select{
+            width: 10rem;
+        }
+    </style>
+    <title>Speech Sysntehessis</title>
+</head>
+<body>
+    
+
+
+
+    <div class="Parent">
+
+        <div class="Child">
+            <form action="">
+                <h1>Text content</h1>
+                <textarea id="text" cols="30" rows="10"></textarea>
+                <div class="Inputs">
+                   <select id="slects"></select>
+                </div>
+                <div class="BTN">
+                    <button type="submit">Voice</button>
+                </div>
+
+            </form>
+    
+        </div>
+
+    </div>
+
+
+
+<script src="function.js">
+
+</script>
+
+</body>
+</html>
